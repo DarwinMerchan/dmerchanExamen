@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dmerchanExamen.Resumen">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="DodgerBlue">
+                <Label Text="Resumen" FontSize="20" TextColor="Blue" HorizontalTextAlignment="Center"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="NOMBRE" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0" />
+                    <Entry x:Name="txtNombre1" Placeholder="NOMBRE" Grid.Row="1" Grid.Column="1"/>
+                    <Label Text="PAGOTOTAL" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="0"/>
+                    <Entry x:Name="txtPagototal" Placeholder="PAGO TOTAL" Grid.Row="2" Grid.Column="1"/>
+                    <Button x:Name="btnGuardar1" Text="Guardar" Clicked="btnGuardar1_Clicked" Grid.Row="3" Grid.Column="0"/>
+                 
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dmerchanExamen.Registro">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="Azure">
+                <Label Text="Sg " x:Name="lblTexto" FontSize="20" TextColor="Blue" HorizontalTextAlignment="Center"/>
+                    <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="NOMBRE" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="txtNombre" Placeholder="NOMBRE" Grid.Row="0" Grid.Column="1"/>
+                    <Label Text="MONTO" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0" />
+                    <Entry x:Name="txtMontoinicial" Placeholder="MONTO INICIAL" Grid.Row="1" Grid.Column="1"/>
+                    <Label Text="PAGO TOTAL" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="0"/>
+                    <Entry x:Name="txtPagomensual" Placeholder="PAGO MENSUAL" Grid.Row="2" Grid.Column="1" />
+                    <Button x:Name="btnCalcularpago" Text="CALCULAR PAGO" Clicked="btnCalcularpago_Clicked" Grid.Row="3" Grid.Column="0"/>
+                    <Button x:Name="btnGuardar" Text="GUARDAR" Clicked="btnGuardar_Clicked" Grid.Row="4" Grid.Column="0"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
